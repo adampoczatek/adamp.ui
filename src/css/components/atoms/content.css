@@ -1,0 +1,29 @@
+.content {
+  padding: 2em 1em;
+  padding: var(--global-spacing-large) var(--global-spacing-regular);
+}
+
+.content__section + .content__section {
+  margin-top: 2rem;
+  margin-top: var(--global-spacing-large);
+}
+
+@media all and (min-width: 600px) {
+  .content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .content {
+    max-width: 750px;
+  }
+
+  .content blockquote {
+    margin-left: -6rem;
+    margin-left: calc(var(--global-spacing-max) * -2);
+    margin-right: -6rem;
+    margin-right: calc(var(--global-spacing-max) * -2);
+  }
+}

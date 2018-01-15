@@ -1,0 +1,65 @@
+.button,
+button {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  padding: 0 var(--global-spacing-regular);
+  background: black;
+  height: 3.3em;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 3.3em;
+  cursor: pointer;
+}
+
+.button + .button,
+.button + button,
+button + .button,
+button + button {
+  margin-left: var(--global-spacing-small);
+}
+
+.button--primary {
+  background-color: var(--global-colors-action);
+}
+
+.button--primary:hover {
+  background-color: var(--global-colors-action-hover);
+}
+
+.button:hover,
+button:hover,
+.button:visited {
+  color: white;
+}
+
+.button:focus,
+button:focus {
+  outline: 0.05rem solid var(--global-colors-action-focus);
+  outline-offset: 0.25rem;
+}
+
+.button:active,
+button:active {
+  background-color: var(--global-colors-action-active);
+}
+
+.button:active:focus,
+button:active:focus {
+  outline: 0.05rem solid var(--global-colors-action-active);
+}
+
+.button:disabled,
+button:disabled {
+  opacity: 0.25;
+  background-color: black;
+}
+
+@media all and (min-width: 1020px) {
+  .button,
+  button {
+    height: 2.8em;
+    line-height: 2.8em;
+  }
+}

@@ -1,0 +1,8 @@
+<ul>
+  {{#each data}}
+  <li>{{ name }}</li>
+  {{#if list}}
+  {{ render '@ul' list }}
+  {{/if}}
+  {{/each}}
+</ul>

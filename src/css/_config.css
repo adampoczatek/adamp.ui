@@ -1,0 +1,28 @@
+:root {
+  /* Global: Size */
+  --global-size: 14;
+
+  /* Global: Spacing */
+  --global-spacing-none: 0;
+  --global-spacing-tiny: 0.175rem;
+  --global-spacing-small: 0.6rem;
+  --global-spacing-regular: 1.15rem;
+  --global-spacing-medium: 1.75rem;
+  --global-spacing-large: 2.5rem;
+  --global-spacing-max: 3.5rem;
+
+  /* Global: Colors */
+  --global-colors-error: crimson;
+  --global-colors-action: blue;
+  --global-colors-action-hover: mediumblue;
+  --global-colors-action-active: tomato;
+  --global-colors-action-focus: blue;
+  --global-colors-action-visited: darkmagenta;
+  --global-colors-alternative: turquoise;
+}
+
+@media all and (min-width: 1020px) {
+  :root {
+    --global-size: 20;
+  }
+}

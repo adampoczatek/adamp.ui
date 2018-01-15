@@ -1,0 +1,35 @@
+table {
+  border-collapse: collapse;
+  hyphens: none;
+}
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: left;
+  word-spacing: 0.25rem;
+  letter-spacing: 0.075rem;
+}
+
+@media all and (min-width: 1020px) {
+  caption {
+    text-align: center;
+  }
+}
+
+tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+td,
+th {
+  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+th {
+  border-bottom: 0.1em solid black;
+}

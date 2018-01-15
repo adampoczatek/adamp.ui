@@ -1,0 +1,71 @@
+{
+  "name": "adampoczatek.github.io",
+  "version": "3.0.0",
+  "description": "Web Dev & Design Blog",
+  "main": "",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive --require babel-polyfill --require babel-register \"./src/**/*.spec.js\"",
+    "start": "./node_modules/.bin/concurrently \"npm run build:css:watch\" \"npm run lint:css:watch\" \"npm run build:js:watch\" \"npm run lint:js:watch\" \"npm test -- --watch\" \"npm run dev:assets\"",
+    "build:css": "./node_modules/.bin/copyfiles -u 2 \"src/css/**/*.css\" ./dist/css",
+    "build:css:watch": "./node_modules/.bin/onchange \"src/**/*.css\" -- npm run build:css",
+    "build:js": "./node_modules/.bin/webpack",
+    "build:js:watch": "npm run build:js -- --watch",
+    "dev:assets": "./node_modules/.bin/serve dist --port 3100",
+    "dev:library": "./node_modules/.bin/fractal start --sync",
+    "lint:js": "./node_modules/.bin/eslint src/**/*.js --fix",
+    "lint:js:watch": "node_modules/.bin/onchange \"src/**/*.js\" -- npm run lint:js",
+    "lint:css": "./node_modules/.bin/stylelint src/css/**/*.css",
+    "lint:css:watch": "node_modules/.bin/onchange \"src/css/**/*.css\" -- npm run lint:css --silent",
+    "build": "./node_modules/.bin/cross-env NODE_ENV=production npm run build:js",
+    "build:preview": "./node_modules/.bin/cross-env NODE_ENV=production-preview npm run build:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adampoczatek/adampoczatek.github.io.git"
+  },
+  "keywords": [
+    "Blog",
+    "UI",
+    "Front-end",
+    "UX",
+    "Web",
+    "Design"
+  ],
+  "author": "Adam Poczatek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adampoczatek/adampoczatek.github.io/issues"
+  },
+  "fractal": {
+    "main": "pattern-library/fractal.js"
+  },
+  "homepage": "https://adamp.co.uk",
+  "devDependencies": {
+    "@frctl/fractal": "^1.1.7",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "concurrently": "^3.5.0",
+    "copyfiles": "^1.2.0",
+    "cross-env": "^5.1.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "faker": "^4.1.0",
+    "jsdom": "^11.5.1",
+    "mocha": "^4.0.1",
+    "onchange": "^3.2.1",
+    "serve": "^6.3.1",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "domready": "^1.0.8"
+  }
+}

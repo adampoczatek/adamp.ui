@@ -1,0 +1,11 @@
+{{#if style.wrap}}<label{{#if classes.input}} class="{{ classes.label }}"{{/if}}{{#if id}} for="{{ id }}"{{/if}}>{{/if}}{{#unless style.wrap}}{{#if style.labelTop}}<label{{#if classes.input}} class="{{ classes.label }}"{{/if}}{{#if id}} for="{{ id }}"{{/if}}>{{ label }}</label>{{/if}}{{/unless}}{{#if style.wrap}}{{#if style.labelTop}}
+    {{ label }}{{/if}}{{/if}}
+{{#if style.wrap}}    {{/if}}{{#if options}}<select{{#if classes.input}} class="{{ classes.input }}"{{/if}}{{#if id}} id="{{ id }}"{{/if}}{{#if disabled}} disabled{{/if}}>{{#if placeholder}}
+{{#if style.wrap}}    {{/if}}    <option disabled selected>{{ placeholder }}</option>{{/if}}
+{{#each options}}
+{{#if ../style.wrap}}    {{/if}}    <option{{#if value}} value="{{ value }}"{{/if}}>{{ text }}</option>
+{{/each}}
+{{#if style.wrap}}    {{/if}}</select>{{/if}}{{#if textarea}}<textarea rows="3" cols="40" {{#if classes.input}} class="{{ classes.input }}"{{/if}}{{#if id}} id="{{ id }}"{{/if}}{{#if placeholder}} placeholder="{{ placeholder }}"{{/if}}{{#if disabled}} disabled{{/if}}>{{ value }}</textarea>{{/if}}{{#unless textarea}}{{#unless options}}<input{{#if classes.input}} class="{{ classes.input }}"{{/if}} type="{{ type }}"{{#if id}} id="{{ id }}"{{/if}}{{#if placeholder}} placeholder="{{ placeholder }}"{{/if}}{{#if value}} value="{{ value }}"{{/if}}{{#if selected}} selected{{/if}}{{#if checked}} checked{{/if}}{{#if disabled}} disabled{{/if}} />{{/unless}}{{/unless}}{{#unless style.wrap}}{{#if style.labelBottom}}
+<label{{#if classes.input}} class="{{ classes.label }}"{{/if}}{{#if id}} for="{{ id }}"{{/if}}>{{ label }}</label>{{/if}}{{/unless}}{{#if style.wrap}}{{#if style.labelBottom}}
+    {{ label }}{{/if}}{{/if}}
+{{#if style.wrap}}</label>{{/if}}

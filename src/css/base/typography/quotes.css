@@ -1,0 +1,67 @@
+blockquote {
+  clear: both;
+  margin: var(--global-spacing-large) 0;
+  padding-left: var(--global-spacing-max);
+  text-indent: calc(var(--global-spacing-max) * -1);
+  padding-right: 1rem;
+}
+
+blockquote p {
+  background: black;
+  display: inline;
+  padding: 0.5rem;
+  color: white;
+  font-family: Baskerville, Georgia, serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  letter-spacing: 0.005rem;
+  line-height: 2rem;
+  word-spacing: 0.25rem;
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+blockquote p::before {
+  margin-right: 0.5rem;
+  content: open-quote;
+}
+
+blockquote p::after {
+  margin-left: 0.5rem;
+  content: close-quote;
+}
+
+blockquote footer {
+  font-style: normal;
+}
+
+blockquote footer::before {
+  content: '— ';
+}
+
+blockquote footer {
+  border-bottom: 0.1em solid black;
+  display: block;
+  margin-top: 1rem;
+  margin-top: var(--global-spacing-regular);
+  margin-bottom: 1rem;
+  margin-bottom: var(--global-spacing-regular);
+  padding-bottom: 1rem;
+  padding-bottom: var(--global-spacing-regular);
+  text-align: right;
+  text-indent: 0;
+}
+
+q::before {
+  content: open-quote;
+  margin-left: 0.25rem;
+  margin-right: 0.1rem;
+}
+
+q::after {
+  content: close-quote;
+  margin-left: 0.1rem;
+  margin-right: 0.25rem;
+}

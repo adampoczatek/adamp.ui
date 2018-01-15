@@ -1,0 +1,38 @@
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+
+ul,
+ol,
+dl {
+  margin-top: var(--global-spacing-regular);
+  margin-bottom: var(--global-spacing-regular);
+}
+
+ul,
+ol {
+  padding-left: var(--global-spacing-large);
+}
+
+li + ul,
+li + ol, {
+  margin-top: var(--global-spacing-tiny);
+  margin-bottom: var(--global-spacing-tiny);
+}
+
+ul li + li {
+  margin-top: var(--global-spacing-tiny);
+}
+
+ol li + li {
+  margin-top: var(--global-spacing-small);
+}
+
+dt {
+  font-weight: 600;
+}
+
+dd + dt {
+  margin-top: var(--global-spacing-small);
+}

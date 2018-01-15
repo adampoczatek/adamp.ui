@@ -1,0 +1,142 @@
+label {
+  position: relative;
+  display: block;
+  margin-bottom: 1em;
+  margin-bottom: var(--global-spacing-regular);
+}
+
+label input,
+label select,
+label textarea {
+  margin-left: 0.5em;
+  margin-left: var(--global-spacing-small);
+}
+
+label input[type=checkbox],
+label input[type=radio] {
+  margin-right: 0.5em;
+  margin-right: var(--global-spacing-small);
+
+  /*
+    Added margin bottom to align checkboxes/radios correctly
+    with the text when put inside a label.
+  */
+  margin-bottom: var(--global-spacing-tiny);
+}
+
+input,
+textarea,
+select,
+button {
+  vertical-align: middle;
+  border-radius: 0;
+  background: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--global-size) * 1px);
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  transition: all 0.1s;
+}
+
+input,
+textarea,
+select {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  padding: 0.5em 1em;
+  padding: var(--global-spacing-small) var(--global-spacing-regular);
+}
+
+select {
+  padding-right: 3em;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxN3B4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9IjAgMCAxNyAxMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8cG9seWdvbiBpZD0iQ29tYmluZWQtU2hhcGUiIGZpbGw9IiMwMDAwMDAiIHBvaW50cz0iOC40ODUyODEzNyA2LjcyNzkyMjA2IDIuMTIxMzIwMzQgMC4zNjM5NjEwMzEgMCAyLjQ4NTI4MTM3IDguNDg1MjgxMzcgMTAuOTcwNTYyNyAxNi45NzA1NjI3IDIuNDg1MjgxMzcgMTQuODQ5MjQyNCAwLjM2Mzk2MTAzMSI+PC9wb2x5Z29uPiAgICA8L2c+PC9zdmc+) calc(100% - 1em) center no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+input,
+select {
+  height: 3.3em;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 1.55em;
+  height: 1.55em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=radio],
+input[type=radio]:checked::after {
+  border-radius: 100px;
+}
+
+input[type=checkbox]:checked::after,
+input[type=radio]:checked::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type=checkbox]:disabled:checked::after,
+input[type=radio]:disabled:checked::after {
+  opacity: 0.5;
+}
+
+input[type=checkbox]:checked::after {
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxNHB4IiBoZWlnaHQ9IjEycHgiIHZpZXdCb3g9IjAgMCAxNCAxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8cGF0aCBkPSJNMi4xMjEzMjAzNCw0LjM2Mzk2MTAzIEw0Ljk0OTc0NzQ3LDcuMTkyMzg4MTYgTDIuODI4NDI3MTIsOS4zMTM3MDg1IEwwLDYuNDg1MjgxMzcgTDIuMTIxMzIwMzQsNC4zNjM5NjEwMyBaIE0xMS4zMTM3MDg1LDAuODI4NDI3MTI1IEwxMy40MzUwMjg4LDIuOTQ5NzQ3NDcgTDQuOTQ5NzQ3NDcsMTEuNDM1MDI4OCBMMi44Mjg0MjcxMiw5LjMxMzcwODUgTDExLjMxMzcwODUsMC44Mjg0MjcxMjUgWiIgaWQ9IkNoZWNrLUljb24iIGZpbGw9IiMwMDAwMDAiPjwvcGF0aD4gICAgPC9nPjwvc3ZnPg==);
+}
+
+input[type=radio]:checked::after {
+  content: ' ';
+  border-radius: 100px;
+  background: black;
+  width: 0.7em;
+  height: 0.7em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: blue;
+  border-color: var(--global-colors-action);
+  outline: none;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.15);
+  outline: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media all and (min-width: 1020px) {
+  input,
+  select {
+    height: 2.8em;
+  }
+
+  input[type=radio],
+  input[type=checkbox] {
+    width: 1.4em;
+    height: 1.4em;
+  }
+}

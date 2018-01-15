@@ -1,0 +1,8 @@
+<ol>
+  {{#each data}}
+  <li>{{ name }}</li>
+  {{#if list}}
+  {{ render '@ol' list }}
+  {{/if}}
+  {{/each}}
+</ol>

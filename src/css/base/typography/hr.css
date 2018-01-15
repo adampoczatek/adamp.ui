@@ -1,0 +1,9 @@
+hr {
+  margin-top: var(--global-spacing-large);
+  margin-bottom: var(--global-spacing-large);
+  border: none;
+  display: block;
+  height: 0.2rem;
+  background: black;
+  opacity: 0.1;
+}

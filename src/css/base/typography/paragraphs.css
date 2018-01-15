@@ -1,0 +1,9 @@
+p:first-child {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: var(--global-spacing-regular);
+  margin-top: var(--global-spacing-regular);
+  text-align: justify;
+}

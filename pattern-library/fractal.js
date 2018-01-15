@@ -1,0 +1,40 @@
+'use strict';
+
+const path = require('path');
+const mandelbrot = require('@frctl/mandelbrot');
+
+/*
+* Require the Fractal module
+*/
+const fractal = module.exports = require('@frctl/fractal').create();
+
+/*
+* Give your project a title.
+*/
+fractal.set('project.title', 'Style Guide');
+
+/*
+* Tell Fractal where to look for components.
+*/
+fractal.components.set('path', path.join(__dirname, 'components'));
+
+/*
+* Tell Fractal where to look for documentation pages.
+*/
+fractal.docs.set('path', path.join(__dirname, 'docs'));
+
+/*
+* Tell the Fractal web preview plugin where to look for static assets.
+*/
+fractal.web.set('static.path', path.join(__dirname, '../dist'));
+
+/**
+ * Theme customisation.
+ */
+const theme = mandelbrot({
+  skin: 'black',
+  panels: ['html', 'info', 'notes'],
+  nav: ['docs', 'components'],
+});
+
+fractal.web.theme(theme);

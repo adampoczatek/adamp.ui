@@ -1,0 +1,44 @@
+em,
+ins {
+  font-style: normal;
+  font-weight: 400;
+}
+
+em {
+  word-spacing: 0.25rem;
+  letter-spacing: 0.075rem;
+}
+
+em strong,
+strong em {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media all and (min-width: 1020px) {
+  em strong,
+  strong em {
+    font-size: 1.5rem;
+  }
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration-color: var(--global-colors-error);
+}
+
+@supports (text-decoration-style: wavy) and (text-decoration-color: var(--global-colors-error)) {
+  mark {
+    background: none;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--global-colors-error);
+  }
+}
+
+cite {
+  opacity: 0.5;
+}

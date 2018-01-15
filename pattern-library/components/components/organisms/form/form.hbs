@@ -1,0 +1,93 @@
+<form class="form">
+  <div class="form__section">
+    <h1>Enter your login details</h1>
+    <p><strong><em>Or use the form below to register as a new customer</em></strong></p>
+    <div class="form__group">
+      <label for="username">Enter your username or email <span class="form__required">*</span></label>
+      <input class="form__control form__control--error" type="text" id="username" />
+      <p class="form__message form__message--error">Your username or password is invalid, please try again</p>
+    </div>
+    <div class="form__group">
+      <label for="password">Enter your password</label>
+      <input class="form__control" type="password" id="password" />
+    </div>
+    <div class="form__group">
+      <button class="button button--primary">Login</button>
+    </div>
+    <div class="form__group">
+      <p>Forgot password? <a href="#forgot-password">Request new password</a></p>
+    </div>
+  </div>
+</form>
+<form class="form">
+  <div class="form__section">
+    <h2>Register</h2>
+    <p>Register with our site to access <a href="#features">all features</a>.</p>
+    <div class="form__group">
+      <label for="first-name">First name</label>
+      <input class="form__control" type="text" id="first-name" />
+    </div>
+    <div class="form__group">
+      <label for="last-name">Last name</label>
+      <input class="form__control" type="text" id="last-name" />
+    </div>
+    <div class="form__group">
+      <label for="email">Email</label>
+      <input class="form__control" type="text" id="email" />
+      <input class="form__control" placeholder="Confirm your email address..." type="text" id="email-confirm" />
+    </div>
+    <div class="form__group">
+      <label for="dob">Date of birth</label>
+      <div class="grid">
+        <div class="grid__column">
+          <select class="form__control" id="dob">
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="grid__column">
+          <select class="form__control">
+            <option>Month</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="grid__column grid__column--half">
+          <select class="form__control">
+            <option>Year</option>
+            <option>1950</option>
+            <option>1951</option>
+            <option>1952</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form__section">
+    <h3>Tell us a bit more about yourself</h3>
+    <p>We'd like to find out more about where are you coming from</p>
+    <div class="form__group">
+      <p>How did you find out about us?</p>
+      <label>
+        <input class="form__control" type="radio" name="feedback"> Search engine
+      </label>
+      <label>
+        <input class="form__control" type="radio" name="feedback"> Newspaper advert
+      </label>
+      <label>
+        <input class="form__control" type="radio" name="feedback"> Friend
+      </label>
+    </div>
+    <div class="form__group">
+      <label>
+        <input class="form__control" type="checkbox">I accept the <a href="#terms">terms and conditions</a>
+      </label>
+    </div>
+    <div class="form__group">
+      <button class="button">Register</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,87 @@
+<article>
+  <h1>The Front-End Checklist</h1>
+  <p><strong><em>An Exhaustive List of all the Elements you need to have/test Before Launching your Website To Production.</em></strong></p>
+  <img src="https://cdn-images-1.medium.com/max/800/1*2ofbexCS_7UAL4gByI37oA.png">
+  <p>The <a href="https://github.com/thedaviddias/Front-End-Checklist">Front-End Checklist</a> is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production.</p>
+  <p>It is based on Front-End developers’ years of experience, with additions coming from other open-source checklists. David Dias is the main author/creator and posted the guide to GitHub where it has taken off! The guide is also available below. Don’t forget to thank David for an awesome guide!</p>
+  <h2>Table of Contents</h2>
+  <ol>
+    <li>Head</li>
+    <li>HTML</li>
+    <li>Webfonts</li>
+    <li>CSS</li>
+    <li>Images</li>
+    <li>JavaScript</li>
+    <li>Security</li>
+    <li>Performance</li>
+    <li>Accessibility</li>
+    <li>SEO</li>
+  </ol>
+  <h2>How To Use</h2>
+  <p>All items in the Front-End Checklist are required for the majority of the projects, but some elements can be omitted or are not essential (in the case of an administration web app, you may not need RSS feed for example).</p>
+  <p>Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:</p>
+  <ul>
+    <li>📖: documentation or article</li>
+    <li>🛠: online tool / testing tool</li>
+    <li>📹: media or video content</li>
+  </ul>
+  <hr>
+  <h2>Head</h2>
+  <p>Notes: You can find a list of everything that could be found in the <code>&lt;head&gt;</code> of an HTML document.</p>
+  <h3>Meta tag</h3>
+  <p><strong>Doctype:</strong> The Doctype is HTML5 and is at the top of all your HTML pages.</p>
+  <pre><code>&lt;!-- Doctype HTML5 --&gt;
+&lt;!doctype html&gt;
+
+&lt;/article&gt;</code></pre>
+  <p>📖 <a href="#">Determining the character encoding — HTML5 W3C</a></p>
+  <p>The next 3 meta tags (Charset, X-UA Compatible and Viewport) need to come first in the head.</p>
+  <ul>
+    <li>
+      <p>Charset: The charset declared (UTF-8) is declared correctly.</p>
+      <pre><code>&lt;!-- Set character encoding for the document --&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;</code></pre>
+    </li>
+    <li>
+      <p>X-UA-Compatible: The X-UA-Compatible meta tag is present.</p>
+      <pre><code>&lt;!-- Instruct Internet Explorer to use its latest rendering engine --&gt;
+&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;</code></pre>
+      <p>📖 <a href="#">Specifying legacy document modes (Internet Explorer)</a></p>
+    </li>
+    <li>
+      <p>Viewport: The viewport is declared correctly.</p>
+      <pre><code>&lt;!-- Viewport for responsive web design --&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code></pre>
+    </li>
+    <li>
+      <p>Title: A title is used on all pages (SEO: Google calculate the pixel width of the characters used in the title, cut off between 472 and 482 pixels. Average character limit would be around 55-characters).</p>
+      <pre><code>&lt;!-- Document Title --&gt;
+&lt;title&gt;Page Title less than 65 characters&lt;/title&gt;</code></pre>
+      <p>📖 <a href="#">Title — HTML — MDN</a></p>
+      <p>🛠 <a href="#">SERP Snippet Generator</a></p>
+    </li>
+    <li>
+      <p>Description: A meta description is provided, it is unique and doesn’t possess more than 150 characters.</p>
+      <pre><code>&lt;!-- Meta Description --&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Description of the page less than 150 characters&quot;&gt;</code></pre>
+      <p><a href="#d12d">📖 Meta Description — HTML — MDN</a></p>
+    </li>
+    <li>
+      <p>Favicons: Each favicon has been created and displays correctly. If you have only a <code>favicon.ico</code>, put it at the root of your site. Normally you won't need to use any markup. However, it's still good practice to link to it using the example below. Today, PNG format is recommended over <code>.ico</code> format (dimensions: 32x32px).</p>
+      <pre><code>&lt;!-- Standard favicon --&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://example.com/favicon.ico&quot;&gt;
+&lt;!-- Recommended favicon format --&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;https://example.com/favicon.png&quot;&gt;</code></pre>
+      <p>🛠 <a href="#">Favicon Generator</a></p>
+      <p>🛠 <a href="#">RealFaviconGenerator</a></p>
+      <p>📖 <a href="#">Favicon Cheat Sheet</a></p>
+      <p>📖 <a href="#">Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? — CSS Tricks</a></p>
+      <p>📖 <a href="#">PNG favicons — caniuse</a></p>
+    </li>
+    <li>
+      <p>Apple Touch Icon: Apple touch favicon apple-mobile-web-app-capable are present. (Create your Apple Icon file with at least 200x200px dimension to support all dimensions that you may need)</p>
+      <pre><code>&lt;!-- Apple Touch Icon --&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/custom-icon.png&quot;&gt;</code></pre>
+    </li>
+  </ul>
+</article>
