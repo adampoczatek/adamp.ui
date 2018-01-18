@@ -3,7 +3,7 @@
   margin-top: var(--global-spacing-regular);
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1019px) {
   .grid__column + .grid__column {
     margin-top: 1em;
     margin-top: var(--global-spacing-regular);
