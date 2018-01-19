@@ -57,5 +57,18 @@
   .hero__content {
     position: relative;
     z-index: 2;
+    max-width: 50rem;
+  }
+}
+
+@media print {
+  .hero__image {
+    display: none;
+  }
+
+  .hero__title,
+  .hero__subtitle {
+    background: transparent;
+    color: black;
   }
 }

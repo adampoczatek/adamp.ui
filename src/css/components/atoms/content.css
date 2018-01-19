@@ -17,7 +17,7 @@
 
 @media all and (min-width: 1020px) {
   .content {
-    max-width: 750px;
+    max-width: 40rem;
   }
 
   .content blockquote {
