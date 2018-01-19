@@ -196,3 +196,9 @@
     line-height: 1;
   }
 }
+
+@media print {
+  .header {
+    display: none;
+  }
+}

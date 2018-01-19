@@ -26,3 +26,10 @@
     --global-size: 20;
   }
 }
+
+@media all and (min-width: 1920px) {
+  :root {
+    --global-size: 24;
+  }
+}
+

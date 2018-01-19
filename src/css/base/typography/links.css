@@ -23,3 +23,9 @@ a:active {
   color: var(--global-colors-action-active);
   outline: none;
 }
+
+@media print {
+  a[href^=http]::after {
+    content: " (" attr(href) ")";
+  }
+}
