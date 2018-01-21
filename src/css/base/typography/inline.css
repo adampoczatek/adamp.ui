@@ -5,13 +5,15 @@ ins {
 }
 
 em {
-  word-spacing: 0.25rem;
-  letter-spacing: 0.075rem;
+  word-spacing: 0.15rem;
+  letter-spacing: 0.05rem;
 }
 
 em strong,
 strong em {
-  font-size: 1.25rem;
+  display: block;
+  text-align: left;
+  font-size: 1.35rem;
   font-weight: 400;
 }
 
