@@ -89,16 +89,18 @@
 }
 
 .header__link:focus,
-.header__link:hover {
+.header__link:active {
+  background-color: var(--global-colors-action-active);
+  border-color: transparent;
+  outline: none;
+  color: white;
+}
+
+.header__link:hover:not(:active):not(.header__link--active) {
   background-color: blue;
   background-color: var(--global-colors-action);
   color: white;
   outline: none;
-}
-
-.header__link:active {
-  background-color: var(--global-colors-action-active);
-  border-color: transparent;
 }
 
 @media all and (max-width: 600px) {

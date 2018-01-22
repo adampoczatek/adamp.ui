@@ -1,0 +1,11 @@
+.footer {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1em;
+  padding: var(--global-spacing-max) var(--global-spacing-regular);
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 0.75rem;
+  text-align: center;
+}
