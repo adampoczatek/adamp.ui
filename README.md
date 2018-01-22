@@ -4,7 +4,7 @@ Welcome to [www.adampoczatek.com](https://www.adampoczatek.com) UI repository
 
 **Note:** 
 
-> This is only the UI framework project, in order to run the website locally you also need to run the [website project](https://github.com/adampoczatek/adampoczatek.github.io). 
+This is only the UI framework project, in order to run the website locally you also need to run the [website project](https://github.com/adampoczatek/adampoczatek.github.io). 
 
 ---
 
