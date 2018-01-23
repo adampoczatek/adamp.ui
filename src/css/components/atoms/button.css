@@ -35,19 +35,10 @@ button:hover,
 }
 
 .button:focus,
-button:focus {
-  outline: 0.05rem solid var(--global-colors-action-focus);
-  outline-offset: 0.25rem;
-}
-
+button:focus,
 .button:active,
 button:active {
   background-color: var(--global-colors-action-active);
-}
-
-.button:active:focus,
-button:active:focus {
-  outline: 0.05rem solid var(--global-colors-action-active);
 }
 
 .button:disabled,

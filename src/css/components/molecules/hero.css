@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.hero__content + .hero__content { 
+.hero__content + .hero__content {
   margin-top: var(--global-spacing-small);
 }
 
