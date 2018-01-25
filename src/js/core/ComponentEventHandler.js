@@ -5,7 +5,7 @@ const noop = () => {};
 /**
  * Class ComponentEventHandler
  * Inspired by jQuery event handlers, this class
- * allows you to attach even handler to multiple
+ * allows you to attach event handler to multiple
  * events.
  */
 export default class ComponentEventHandler {

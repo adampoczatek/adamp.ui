@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
+const pkg = require('./package.json');
 
 const isProd = () => process.env.NODE_ENV === 'production';
 
@@ -9,7 +10,7 @@ const config = {
     global: ['./js/global'],
   },
   output: {
-    path: resolve('dist/js'),
+    path: resolve(`dist/${pkg.version}/js`),
     filename: '[name].bundle.js',
   },
   devtool: '#source-map',
