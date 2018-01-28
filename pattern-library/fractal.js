@@ -2,6 +2,7 @@
 
 const path = require('path');
 const mandelbrot = require('@frctl/mandelbrot');
+const pkg = require('../package.json');
 
 /*
 * Require the Fractal module
@@ -27,6 +28,11 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
 * Tell the Fractal web preview plugin where to look for static assets.
 */
 fractal.web.set('static.path', path.join(__dirname, '../dist'));
+
+/**
+ * Create a reference to the correct version of pattern library.
+ */
+fractal.set('project.uiVersion', pkg.version);
 
 /**
  * Theme customisation.
