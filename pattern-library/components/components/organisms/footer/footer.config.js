@@ -1,4 +1,4 @@
 module.exports = {
   name: 'footer',
-  label: 'footer',
+  label: 'Footer',
 };
